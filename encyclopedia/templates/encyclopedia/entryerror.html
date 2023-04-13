@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Page Not Found
+{% endblock %}
+
+{% block body %}
+<div style="text-align: center;">
+    <img src="../../static/image/error.png" alt="error" width="700px">
+    <h2>This page already exists with the provided title <a href="/wiki/{{ title }}">"{{ title }}"</a></h2>
+    <p>You can read this entry and modify it if needed.</p>
+</div>
+
+{% endblock %}
